@@ -515,7 +515,7 @@
       }
     }
 
-    // Countdown Timer for Deadline
+
     const deadline = new Date('February 26, 2025 23:59:59').getTime(); // Updated deadline
 
     function updateCountdown() {
@@ -539,7 +539,7 @@
     const countdownInterval = setInterval(updateCountdown, 1000);
     updateCountdown();
 
-    // Motivational Quotes
+
     const quotes = [
       "Success is the sum of small efforts, repeated day in and day out. - Robert Collier",
       "The future belongs to those who believe in the beauty of their dreams. - Eleanor Roosevelt",
@@ -552,7 +552,6 @@
         quotes[Math.floor(Math.random() * quotes.length)];
     }
 
-    // Initialize checkbox states and event listeners
     document.querySelectorAll('.progress').forEach((checkbox, index) => {
       checkbox.checked = completedTasks[index] || false;
       checkbox.addEventListener('change', updateProgress);
@@ -560,7 +559,6 @@
 
     updateProgress();
 
-    // Particle Background Animation
     const particlesContainer = document.querySelector('.particles');
     const particleCount = 100;
 
@@ -592,3 +590,4 @@
   </style>
 </body>
 </html>
+
